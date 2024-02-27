@@ -1,0 +1,175 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: #fffdf5;
+}
+
+/*  ?  */
+* {
+    box-sizing: inherit; 
+}
+
+/* Navigation */
+
+nav > ul > li > a {
+    color: skyblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    padding-right: 1rem;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li:nth-child(4){
+    margin-left: auto;
+}
+
+/* Heading Section */
+
+.Top {
+    background-color: lightgray;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.Top > button {
+    border: none;
+    color: white;
+    background-color: #45B6FB;
+    padding: .6rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 1.5s ease-in-out;
+}
+
+.Top > button:hover {
+    transform:rotate(360deg)
+}
+
+.Top > button > a {
+    color: white;
+}
+
+.Top > h1 {
+    color: #9A9A9A;
+}
+
+.Top > h1:hover {
+    animation: animation1;
+    animation-duration: 2s;
+}
+@keyframes animation1 {
+    from {color: #9A9A9A;}
+    to {color: blue;}
+}
+
+.Top > p {
+    color: #505050;
+}
+
+
+
+
+/* Our Newest Products */
+
+.firstselection{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.NP1 > button, .NP2 > button, .NP3 > button, .NP4 > button {
+    border: none;
+    color: white;
+    background-color: #45B6FB;
+    padding: .4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+.NP1 > button > a, .NP2 > button > a, .NP3 > button > a, .NP4 > button > a {
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+
+.firstselection {
+    border-top: lightgray solid;
+    border-bottom: lightgray solid;
+}
+
+img {
+    width: 200px;
+    border: lightgray solid;
+    padding: 3px;
+}
+
+
+/* Big Special */
+.special {
+    border: lightgray solid;
+    margin: 1rem;
+    background: #B9E9FB;
+    padding-left: 1rem;;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* Other Neat Products */
+
+.MoreProducts {
+    border-top: lightgray solid;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-bottom: lightgray solid;
+    margin-bottom: 1rem;
+}
+
+.rowofsix {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.MP1 > img, .MP2 > img, .MP3 > img, .MP4 > img, .MP5 > img, .MP6 > img {
+    width: 140px;
+}
+
+/* Top Products Columns */
+.TopProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* Footer */
+footer {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
